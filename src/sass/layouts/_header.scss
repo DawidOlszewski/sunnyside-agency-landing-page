@@ -1,4 +1,5 @@
 header {
+    width: 100vw;
     min-height: 143.467vw;
     background-image: url(/assets/mobile/image-header.jpg);
     background-repeat: no-repeat;
@@ -20,13 +21,16 @@ header {
     }
 
     & nav {
+        padding: 1.5rem 1.5rem;
         width: 100%;
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     & h1 {
+        max-width: 18rem;
         margin-top: auto;
         color: var(--clr-neutral-100);
         font-size: 2.2rem;

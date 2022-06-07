@@ -7,6 +7,10 @@
     display: flex;
     position: relative;
 
+    input {
+        display: none;
+    }
+
     & div {
         height: 10%;
         width: 2.7rem;
@@ -53,7 +57,7 @@
         }
     }
 
-    &:hover div {
+    &.open-menu div {
         background-color: rgba(white, 0);
 
         &::before {
