@@ -1,9 +1,12 @@
 header {
     width: 100vw;
-    min-height: 143.467vw;
+    height: 143.467vw;
+    max-height: 100vh;
+
     background-image: url(/assets/mobile/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom center;
 
     display: flex;
     flex-flow: column nowrap;
@@ -12,6 +15,7 @@ header {
     text-align: center;
 
     & > img {
+        margin-top: 10%;
         margin-bottom: 36%;
         height: 23%;
     }
@@ -101,8 +105,19 @@ header {
         letter-spacing: 0.2rem;
         text-transform: uppercase;
     }
-}
 
-// .text-img-separated-section:nth-of-type(1) .learn-more::after {
-//     background-color: yellow;
-// }
+    @media (min-width: 600px) {
+        height: 55.56vw;
+        background-image: url(/assets/desktop/image-header.jpg);
+
+        & > img {
+            margin-bottom: 0;
+            margin-top: 0%;
+            height: 1rem;
+        }
+
+        h1 {
+            margin: 0;
+        }
+    }
+}

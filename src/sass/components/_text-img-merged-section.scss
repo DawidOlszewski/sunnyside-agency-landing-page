@@ -1,8 +1,9 @@
 .text-img-merged-section {
     height: calc(160vw);
-    // background-image: url(/assets/mobile/image-photography.jpg);
+    max-height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center;
 
     display: flex;
     flex-flow: column nowrap;
@@ -12,9 +13,10 @@
 
     h2 {
         margin: 0 1rem 2rem 1rem;
+        font-weight: 900;
     }
 
     p {
-        margin: 0 1rem 4rem 1rem;
+        margin: 0 1rem 3.5rem 1rem;
     }
 }
