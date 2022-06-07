@@ -1,5 +1,5 @@
 header {
-    height: 143.467vw;
+    min-height: 143.467vw;
     background-image: url(/assets/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -9,8 +9,6 @@ header {
     align-items: center;
     justify-content: start;
     text-align: center;
-
-    padding: 1rem;
 
     & > img {
         margin-bottom: 36%;
@@ -29,9 +27,13 @@ header {
     }
 
     & h1 {
-        margin: auto 0;
+        margin-top: auto;
         color: var(--clr-neutral-100);
         font-size: 2.2rem;
         text-transform: uppercase;
     }
 }
+
+// .text-img-separated-section:nth-of-type(1) .learn-more::after {
+//     background-color: yellow;
+// }
