@@ -16,24 +16,89 @@ header {
         height: 23%;
     }
 
-    & ul {
-        display: none;
-    }
-
-    & nav {
+    nav {
         padding: 1.5rem 1.5rem;
         width: 100%;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
-    & h1 {
+    ul.open-menu {
+        display: flex;
+    }
+
+    ul {
+        position: absolute;
+        left: 1.5rem;
+        right: 1.5rem;
+        top: 6rem;
+
+        padding: 2rem;
+
+        list-style-type: none;
+        background-color: white;
+
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--clr-neutral-300);
+        }
+
+        li:last-of-type {
+            background-color: var(--clr-primary-yellow-100);
+            width: 9rem;
+            height: 3rem;
+
+            border-radius: 5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-transform: uppercase;
+                color: var(--clr-neutral-700);
+                font-size: 0.9rem;
+                font-weight: 900;
+            }
+        }
+
+        li:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            // width: 2rem;
+            // height: 2rem;
+            background-color: transparent;
+            border: 0.7rem solid transparent;
+
+            border-bottom-color: white;
+            border-right-color: white;
+
+            transform: translateY(-100%);
+        }
+    }
+
+    h1 {
         max-width: 18rem;
         margin-top: auto;
+
         color: var(--clr-neutral-100);
         font-size: 2.2rem;
+
+        letter-spacing: 0.2rem;
         text-transform: uppercase;
     }
 }
