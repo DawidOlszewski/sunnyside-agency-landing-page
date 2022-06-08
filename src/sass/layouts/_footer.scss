@@ -41,18 +41,63 @@ footer {
         font-family: var(--ff-1);
         text-decoration: none;
         color: var(--clr-primary-green-100);
+
+        transition: color 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: var(--clr-neutral-100);
+        }
     }
 }
 
-.footer-img {
+.footer-logo {
     margin-bottom: 2.5rem;
 
     --width: 10rem;
+
     width: var(--width);
     height: calc(var(--width) * 6 / 31);
     background-color: var(--clr-primary-green-100);
     -webkit-mask: url(../assets/logo.svg) no-repeat center;
     mask: url(../assets/logo.svg) no-repeat center;
     mask-size: cover;
-    -webkit-mask-size: contain;
+    -webkit-mask-size: cover;
+}
+
+.icon-container li:nth-child(1) div {
+    -webkit-mask: url(../assets/icon-pinterest.svg) no-repeat center;
+    mask: url(../assets/icon-pinterest.svg) no-repeat center;
+}
+.icon-container li:nth-child(2) div {
+    -webkit-mask: url(../assets/icon-twitter.svg) no-repeat center;
+    mask: url(../assets/icon-twitter.svg) no-repeat center;
+}
+.icon-container li:nth-child(3) div {
+    -webkit-mask: url(../assets/icon-instagram.svg) no-repeat center;
+    mask: url(../assets/icon-instagram.svg) no-repeat center;
+}
+.icon-container li:nth-child(4) div {
+    -webkit-mask: url(../assets/icon-facebook.svg) no-repeat center;
+    mask: url(../assets/icon-facebook.svg) no-repeat center;
+}
+
+.footer-icon {
+    div {
+        width: 2rem;
+        height: 2rem;
+
+        background-color: var(--clr-primary-green-100);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+        div {
+            background-color: var(--clr-neutral-100);
+        }
+    }
 }
