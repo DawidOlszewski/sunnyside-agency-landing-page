@@ -6,10 +6,14 @@
     align-items: center;
     justify-content: center;
 
+    @media (min-width: 600px) {
+        padding: 10rem 1.5rem;
+    }
+
     ul {
         width: 100%;
 
-        max-width: 50rem;
+        max-width: 70rem;
 
         display: flex;
         flex-flow: column nowrap;
@@ -32,6 +36,10 @@
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         color: var(--clr-neutral-200);
+
+        @media (min-width: 600px) {
+            font-size: 1.4rem;
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 .text-img-merged-section {
     height: calc(160vw);
     max-height: 40rem;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -17,6 +18,7 @@
     }
 
     p {
+        max-width: 20rem;
         margin: 0 1rem 3.5rem 1rem;
     }
 }

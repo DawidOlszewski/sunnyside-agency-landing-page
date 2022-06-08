@@ -14,10 +14,21 @@ header {
     justify-content: start;
     text-align: center;
 
+    @media (min-width: 600px) {
+        height: 55.56vw;
+        background-image: url(/assets/desktop/image-header.jpg);
+    }
+
     & > img {
         margin-top: 10%;
         margin-bottom: 36%;
         height: 23%;
+
+        @media (min-width: 600px) {
+            margin-bottom: 0;
+            margin-top: 8%;
+            height: 18%;
+        }
     }
 
     nav {
@@ -29,91 +40,10 @@ header {
         align-items: center;
         position: relative;
 
-        img {
-            height: 60%;
-        }
-    }
-
-    @media (max-width: 600px) {
-        ul.open-menu {
-            display: flex;
-        }
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-
-        @media (max-width: 600px) {
-            padding: 2rem;
-            position: absolute;
-            left: 1.5rem;
-            right: 1.5rem;
-            top: 6rem;
-
-            li:not(:first-child) {
-                margin-top: 1.5rem;
-            }
-        }
-
-        background-color: white;
-
-        display: none;
-        flex-flow: column nowrap;
-        justify-content: start;
-        align-items: center;
-
         @media (min-width: 600px) {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            background-color: transparent;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--clr-neutral-300);
-
-            @media (min-width: 600px) {
-                color: var(--clr-neutral-100);
+            img {
+                height: 60%;
             }
-        }
-
-        li:last-of-type {
-            background-color: var(--clr-primary-yellow-100);
-            width: 9rem;
-            height: 3rem;
-
-            border-radius: 5rem;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            a {
-                text-transform: uppercase;
-                color: var(--clr-neutral-700);
-                font-size: 0.9rem;
-                font-weight: 900;
-            }
-
-            @media (min-width: 600px) {
-                background-color: var(--clr-neutral-100);
-            }
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            background-color: transparent;
-            border: 0.7rem solid transparent;
-
-            border-bottom-color: white;
-            border-right-color: white;
-
-            transform: translateY(-100%);
         }
     }
 
@@ -130,28 +60,11 @@ header {
 
         @media (min-width: 600px) {
             max-width: 100rem;
-            margin-top: 5rem;
+            margin-top: 5vw;
         }
 
         @media (min-width: 700px) {
             font-size: 2.7rem;
         }
-    }
-
-    @media (min-width: 600px) {
-        height: 55.56vw;
-        background-image: url(/assets/desktop/image-header.jpg);
-
-        & > img {
-            margin-bottom: 0;
-            margin-top: 8%;
-            height: 18%;
-        }
-    }
-}
-
-@media (min-width: 600px) {
-    .menu {
-        display: none;
     }
 }
