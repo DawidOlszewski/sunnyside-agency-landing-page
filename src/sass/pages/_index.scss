@@ -1,7 +1,22 @@
 //Todo change to merged section
 
-.text-img-merged-section:nth-child(4) {
+.text-img-merged-section {
+    @media (max-width: 600px) {
+        max-height: 45rem;
+    }
+
+    @media (min-width: 600px) {
+        min-height: 30rem;
+        height: 45vw;
+    }
+}
+
+.merged-sections-container .text-img-merged-section:nth-child(1) {
     background-image: url(/assets/mobile/image-graphic-design.jpg);
+
+    @media (min-width: 600px) {
+        background-image: url(/assets/desktop/image-graphic-design.jpg);
+    }
 
     h2,
     p {
@@ -9,10 +24,32 @@
     }
 }
 
-.text-img-merged-section:nth-child(5) {
+.merged-sections-container .text-img-merged-section:nth-child(2) {
     background-image: url(/assets/mobile/image-photography.jpg);
+
+    @media (min-width: 600px) {
+        background-image: url(/assets/desktop/image-photography.jpg);
+    }
+
     h2,
     p {
         color: var(--clr-primary-green-200);
+    }
+}
+
+.text-img-separated-section:nth-of-type(1) .learn-more::after {
+    background-color: var(--clr-primary-yellow-100);
+    opacity: 0.3;
+}
+
+.text-img-separated-section:nth-of-type(2) .learn-more::after {
+    background-color: var(--clr-primary-orange-100);
+    opacity: 0.3;
+}
+
+@media (min-width: 600px) {
+    .merged-sections-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

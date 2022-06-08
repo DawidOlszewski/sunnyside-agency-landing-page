@@ -11,6 +11,10 @@
         display: none;
     }
 
+    @media (min-width: 600px) {
+        display: none;
+    }
+
     & div {
         height: 10%;
         width: 2.7rem;
