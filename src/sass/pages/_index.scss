@@ -1,11 +1,21 @@
 //Todo change to merged section
 
+.text-img-merged-section {
+    @media (max-width: 600px) {
+        max-height: 45rem;
+    }
+
+    @media (min-width: 600px) {
+        min-height: 30rem;
+        height: 45vw;
+    }
+}
+
 .merged-sections-container .text-img-merged-section:nth-child(1) {
     background-image: url(/assets/mobile/image-graphic-design.jpg);
 
     @media (min-width: 600px) {
         background-image: url(/assets/desktop/image-graphic-design.jpg);
-        height: 50vw;
     }
 
     h2,
@@ -19,7 +29,6 @@
 
     @media (min-width: 600px) {
         background-image: url(/assets/desktop/image-photography.jpg);
-        height: 50vw;
     }
 
     h2,
