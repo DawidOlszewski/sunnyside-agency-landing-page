@@ -9,7 +9,7 @@
     justify-content: start;
     align-items: center;
 
-    @media (max-width: 599px) {
+    @media (max-width: 599.99px) {
         padding: 2rem;
         position: absolute;
         left: 1.5rem;
@@ -34,8 +34,12 @@
     @media (min-width: 600px) {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 1.5rem;
         background-color: transparent;
+    }
+
+    @media (min-width: 620px) {
+        gap: 2rem;
     }
 
     a {
@@ -88,7 +92,7 @@
     }
 
     &::before {
-        @media (max-width: 599px) {
+        @media (max-width: 599.99px) {
             content: '';
         }
         position: absolute;
