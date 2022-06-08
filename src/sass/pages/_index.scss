@@ -12,10 +12,10 @@
 }
 
 .merged-sections-container .text-img-merged-section:nth-child(1) {
-    background-image: url(/assets/mobile/image-graphic-design.jpg);
+    background-image: url(../assets/mobile/image-graphic-design.jpg);
 
     @media (min-width: 600px) {
-        background-image: url(/assets/desktop/image-graphic-design.jpg);
+        background-image: url(../assets/desktop/image-graphic-design.jpg);
     }
 
     h2,
@@ -25,10 +25,10 @@
 }
 
 .merged-sections-container .text-img-merged-section:nth-child(2) {
-    background-image: url(/assets/mobile/image-photography.jpg);
+    background-image: url(../assets/mobile/image-photography.jpg);
 
     @media (min-width: 600px) {
-        background-image: url(/assets/desktop/image-photography.jpg);
+        background-image: url(../assets/desktop/image-photography.jpg);
     }
 
     h2,
