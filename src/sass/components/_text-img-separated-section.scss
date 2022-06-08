@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 
     @media (min-width: 600px) {
         display: grid;
@@ -38,6 +39,12 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+            padding: 3rem 10vw;
+            min-height: 100vw;
+        }
     }
 
     a {
