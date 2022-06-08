@@ -4,10 +4,20 @@
 
     background-color: white;
 
-    display: none;
+    display: flex;
     flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
+
+    animation: in 1s ease forwards;
+
+    &.out {
+        animation: out 1s ease forwards;
+    }
+
+    &.invisible {
+        visibility: hidden;
+    }
 
     @media (max-width: 600px) {
         padding: 2rem;
@@ -75,6 +85,28 @@
         border-bottom-color: white;
         border-right-color: white;
 
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
         transform: translateY(-100%);
     }
 }
